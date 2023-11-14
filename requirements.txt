@@ -1,0 +1,4 @@
+Flask
+Firebase_Admin
+gunicorn
+flask-limiter

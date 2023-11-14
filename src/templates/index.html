@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>shortener | oliver.me</title>
+
+    <link rel="shortcut icon" href="../static/images/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="../static/css/header.css">
+
+    <script src="../static/js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <span class="image_container"><img src="../static/images/favicon.png" alt="Shortener Logo" class="favicon"></span>
+        <nav class="header_navigation">
+            <ul class="hdnv_links">
+                <li class="hdnvlks_container"><a href="https://shortener.oliverm.me" class="nv_link">Home</a></li>
+                <li class="hdnvlks_container"><a href="https://preview.oliverm.me" class="nv_link">Previews</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="main_title">
+            the shortener
+        </h1>
+        <a class="main_description" href="https://github.com">
+            a quick working, flask created, url shortener
+        </a>
+
+        <div class="main_shortener">
+            <input type="url" name="shortening_url" id="shortening_url" placeholder="the longer link">
+            <br>
+            <button class="submit_button" onclick="shorten()">shorten</button>
+        </div>
+    </main>
+</body>
+</html>

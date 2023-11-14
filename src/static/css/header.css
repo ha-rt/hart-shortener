@@ -1,0 +1,48 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+}
+
+/* FAVICON */
+
+header .image_container {
+    display: block;
+
+    width: 45px;
+    height: 45px;
+    padding-top: 32px;
+}
+
+header .image_container .favicon {
+    width: 100%;
+    height: 100%;
+}
+
+/* NAVIGATION */
+
+header .header_navigation .hdnv_links {
+    display: flex;
+    list-style: none;
+}
+
+header .header_navigation .hdnv_links .hdnvlks_container {
+    display: inline-block;
+    padding-top: 45px;
+    padding-left: 32px;
+}
+
+header .header_navigation .hdnv_links .hdnvlks_container .nv_link {
+    color: rgb(255,255,255);
+    text-decoration: none;
+    font-size: initial;
+
+    transition: all 0.3s ease;
+}
+
+header .header_navigation .hdnv_links .hdnvlks_container .nv_link:hover {
+    color: rgb(106, 0, 255);
+    font-size: 17px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
