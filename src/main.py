@@ -81,16 +81,5 @@ def redirect_to_original(short_code):
     else:
         return "Short URL not found", 404
 
-@app.route('/api/get/<short_code>', methods=['GET'])
-def returnLink(short_code):
-    doc_ref = db.collection('urls').document(short_code)
-    doc = doc_ref.get()
-
-    if doc.exists:
-        original_url = doc.to_dict()['original_url']
-        return original_url
-    else:
-        return "Short URL not found", 404
-
 if __name__ == "__main__":
     app.run()
