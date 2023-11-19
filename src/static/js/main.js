@@ -6,6 +6,6 @@ function shorten() {
             document.getElementById('shortening_url').value = this.responseText;
         }
     };
-    xhttp.open("GET", "/api/shorten?original_url=" + encodeURIComponent(originalUrl), true);
+    xhttp.open("GET", "/api/get/" + encodeURIComponent(originalUrl), true);
     xhttp.send();
 }
